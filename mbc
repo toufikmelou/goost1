@@ -1,0 +1,15 @@
+from flet import *
+
+def main(page: Page):
+    txt = Text("مرحبًا")
+
+    def change_text(e):
+        txt.value = "تم الضغط!"
+        page.update()
+
+    page.add(
+        txt,
+        ElevatedButton("اضغط هنا", on_click=change_text)
+    )
+
+app(target=main)
