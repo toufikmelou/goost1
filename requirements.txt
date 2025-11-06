@@ -1,1 +1,4 @@
-flet 
+flet
+flet[all]
+pydantic
+requests
